@@ -17,7 +17,7 @@ UNIX CRON, I have attached an image to show how to use the differnt Salesforce C
 
 For example, suppose I want to send a CSV report of all Uaserd M-F at 11:20 in the morning to myself.
 Here is how I would do it (paste the following into Developer Console - all properties are mandatory)
-
+in the "Debug">"Open Execute Annoymous Window" or CTRL+E
 
 ```javascript 
 // Fires Mon-Friday at 11:20 in the morning
@@ -33,10 +33,12 @@ system.schedule('Email InauthUser Report Job', cronString, emailReportJob);`
 ![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/devconsole.screenshot.png)
 
 To disable the job, goto setup, look for All scheduled jobs, there should be an entry that was entered 
-by you, the adminsitrator, or developr, you can modify or delete it. :
+by you, the adminsitrator, or developr, you can modify or delete it.
+
 ![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/schedjobs.screenshot.png)
 
-Delete or modiy the frequency of the scheduled job. :
+Delete or modiy the frequency of the scheduled job.
+
 ![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/modify.schedjob.screenshot.png)
 
 
