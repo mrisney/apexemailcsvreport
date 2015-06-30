@@ -21,7 +21,7 @@ UNIX CRON, I have attached an image to show how to use the differnt Salesforce C
 
 ![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/SaleforceCron.png)
 
-For example, suppose I want to send a CSV report M-F at 11:20 in the morning to myself.
+For example, suppose I want to send a CSV report of all Uaserd M-F at 11:20 in the morning to myself.
 Here is how I would do it (paste the following into Developer Console - all properties are mandatory)
 
 
@@ -36,5 +36,8 @@ emailReportJob.name = 'InAuth_Users';
 
 system.schedule('Email InauthUser Report Job', cronString, emailReportJob);`
 ```
+![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/devconsole.screenshot.png)
+
+
 
 
