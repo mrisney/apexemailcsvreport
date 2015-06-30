@@ -13,7 +13,7 @@ and have it sent to anyone, anytime, you can disable it in the APEX Scheduled jo
 I scripted this, to use Salesforce CRON's format, which is slightly differnt than standard
 UNIX CRON, I have attached an image to show how to use the differnt Salesforce CRON expressions.
 
-![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/tree/master/screenshots/SaleforceCron.png)
+![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/screenshots/SaleforceCron.png)
 
 For example, suppose I want to send a CSV report of all Users M-F at 11:20 in the morning to myself.
 Here is how I would do it (paste the following into Developer Console - all properties are mandatory)
@@ -35,11 +35,11 @@ system.schedule('Email InauthUser Report Job', cronString, emailReportJob);`
 To disable the job, goto setup, look for All scheduled jobs, there should be an entry that was entered 
 by you, the adminsitrator, or developr, you can modify or delete it.
 
-![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/tree/master/screenshots/schedjobs.screenshot.png)
+![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/screenshots/schedjobs.screenshot.png)
 
 Delete or modiy the frequency of the scheduled job.
 
-![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/tree/master/screenshots/modify.schedjob.screenshot.png)
+![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/screenshots/modify.schedjob.screenshot.png)
 
 
 
