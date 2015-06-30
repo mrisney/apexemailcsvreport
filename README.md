@@ -30,7 +30,7 @@ emailReportJob.name = 'InAuth_Users';
 
 system.schedule('Email InauthUser Report Job', cronString, emailReportJob);`
 ```
-![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/tree/master/screenshots/devconsole.screenshot.png)
+![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/screenshots/devconsole.screenshot.png)
 
 To disable the job, goto setup, look for All scheduled jobs, there should be an entry that was entered 
 by you, the adminsitrator, or developr, you can modify or delete it.
