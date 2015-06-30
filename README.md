@@ -1,9 +1,9 @@
 # Simple Salesforce Utility to email CSV Reports
 APEX class and Job used in conjuction with the APEX Scheduler to Email Reports as CSV
 
-EmailCSVReport
-EmailCSVReportJob
-EmailCSVReportTest
+*EmailCSVReport
+*EmailCSVReportJob
+*EmailCSVReportTest
 
 Report by DeveloperName*
 
