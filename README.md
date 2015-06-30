@@ -1,16 +1,18 @@
 # Simple Salesforce Utility to email CSV Reports
 An APEX class used in conjuction with the APEX Scheduler to Email Reports as CSV
 
--- 3 APEX Classed)
+
+*3 APEX Classes*
 
 EmailCSVReport
 EmailCSVReportJob
 EmailCSVReportTest
 
--- get a report by DeveloperName
+*Report by DeveloperName*
+
 Go to Developer Cponsole, get a list of reports from a SOQL (Saleforce Object Query Language)
 
-"SELECT Id, DeveloperName FROM Report"
+'SELECT Id, DeveloperName FROM Report'
 
 This will give you a list of reports that are in production.
 There are many, so I wrote this utility to be general. You can email any report in CSV
@@ -24,7 +26,7 @@ For example, suppose I want to send a CSV report M-F at 11:20 in the morning to 
 Here is how I would do it (paste the following into Developer Console - all properties are mandatory)
 
 
-// Fires Mon-Friday at 11:20 in the morning
+```// Fires Mon-Friday at 11:20 in the morning
 string cronString = '0 20 11 ? * MON-FRI';
 EmailCSVReportJob emailReportJob = new EmailCSVReportJob();
 emailReportJob.emailToAddress = 'xxx@xxxxx.com';
@@ -32,7 +34,7 @@ emailReportJob.emailFromAdress = 'xxx@xxxx.com';
 emailReportJob.subject = 'test automated user report';
 emailReportJob.name = 'InAuth_Users';
 
-system.schedule('Email InauthUser Report Job', cronString, emailReportJob);
+system.schedule('Email InauthUser Report Job', cronString, emailReportJob);```
 
 
 
