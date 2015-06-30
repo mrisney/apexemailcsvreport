@@ -26,7 +26,7 @@ For example, suppose I want to send a CSV report M-F at 11:20 in the morning to 
 Here is how I would do it (paste the following into Developer Console - all properties are mandatory)
 
 
-`code()` 
+```javascript 
 // Fires Mon-Friday at 11:20 in the morning
 string cronString = '0 20 11 ? * MON-FRI';
 EmailCSVReportJob emailReportJob = new EmailCSVReportJob();
@@ -36,6 +36,6 @@ emailReportJob.subject = 'test automated user report';
 emailReportJob.name = 'InAuth_Users';
 
 system.schedule('Email InauthUser Report Job', cronString, emailReportJob);`
-
+```
 
 
