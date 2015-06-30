@@ -1,18 +1,17 @@
 # Simple Salesforce Utility to email CSV Reports
-An APEX class used in conjuction with the APEX Scheduler to Email Reports as CSV
-
-
-*3 APEX Classes*
+APEX class and Job used in conjuction with the APEX Scheduler to Email Reports as CSV
 
 EmailCSVReport
 EmailCSVReportJob
 EmailCSVReportTest
 
-*Report by DeveloperName*
+Report by DeveloperName*
 
 Go to Developer Cponsole, get a list of reports from a SOQL (Saleforce Object Query Language)
 
+```javascript 
 'SELECT Id, DeveloperName FROM Report'
+```
 
 This will give you a list of reports that are in production.
 There are many, so I wrote this utility to be general. You can email any report in CSV
