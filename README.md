@@ -1,12 +1,6 @@
 # Simple Salesforce Utility to email CSV Reports
 APEX class and Job used in conjuction with the APEX Scheduler to Email Reports as CSV
 
-*EmailCSVReport
-*EmailCSVReportJob
-*EmailCSVReportTest
-
-Report by DeveloperName*
-
 Go to Developer Cponsole, get a list of reports from a SOQL (Saleforce Object Query Language)
 
 ```javascript 
@@ -37,6 +31,17 @@ emailReportJob.name = 'InAuth_Users';
 system.schedule('Email InauthUser Report Job', cronString, emailReportJob);`
 ```
 ![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/devconsole.screenshot.png)
+
+To disable the job, goto setup, look for All scheduled jobs, there should be an entry that was entered 
+by you, the adminsitrator, or developr, you can modify or delete it. :
+![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/schedjobs.screenshot.png)
+
+Delete or modiy the frequency of the scheduled job. :
+![ScreenShot](https://raw.github.com/mrisney/apexemailcsvreport/master/modify.schedjob.screenshot.png)
+
+
+
+
 
 
 
